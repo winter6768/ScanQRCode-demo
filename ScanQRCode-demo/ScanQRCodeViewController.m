@@ -203,7 +203,7 @@
     {
         [self.session stopRunning];
         [image_line.layer removeAllAnimations];
-        [image_line removeFromSuperview];
+        image_line.hidden = YES;
         
         AVMetadataMachineReadableCodeObject *obj = metadataObjects.firstObject;
         
